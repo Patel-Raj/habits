@@ -6,16 +6,6 @@
   <display-name>Archetype Created Web Application</display-name>
   
   <servlet>
-  	<servlet-name>home</servlet-name>
-  	<servlet-class>servlets.IntroServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>home</servlet-name>
-  	<url-pattern>/home</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
   	<servlet-name>addHabit</servlet-name>
   	<servlet-class>servlets.AddHabit</servlet-class>
   </servlet>

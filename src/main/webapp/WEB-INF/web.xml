@@ -15,4 +15,14 @@
   	<url-pattern>/home</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>addHabit</servlet-name>
+  	<servlet-class>servlets.AddHabit</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addHabit</servlet-name>
+  	<url-pattern>/addHabit</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -6,16 +6,6 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-
-   <bean class="servlets.BubbleSort" name="bubbleSort">
-   		<property name="val" value="100"/>
-   </bean>
-   
-   <bean class="servlets.BinarySearch" name="binarySearch">
-   		<property name="bubbleSort">
-   			<ref bean="bubbleSort"/>
-   		</property>
-   </bean>
    
     <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>

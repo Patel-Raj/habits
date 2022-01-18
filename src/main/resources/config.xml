@@ -16,4 +16,24 @@ http://www.springframework.org/schema/context/spring-context.xsd">
    			<ref bean="bubbleSort"/>
    		</property>
    </bean>
+   
+    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="username" value="root"/>
+        <property name="password" value="mysql@123"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/springjdbc"/>
+    </bean>
+
+
+    <bean class="org.springframework.jdbc.core.JdbcTemplate" name="jdbcTemplate">
+        <property name="dataSource">
+            <ref bean="ds"/>
+        </property>
+    </bean>
+    
+    <bean class="servlets.dao.HabitDaoImpl" name="habitDaoImpl">
+        <property name="jdbcTemplate">
+            <ref bean="jdbcTemplate"/>
+        </property>
+    </bean>
 </beans>

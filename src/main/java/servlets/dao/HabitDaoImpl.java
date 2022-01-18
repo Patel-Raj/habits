@@ -31,4 +31,10 @@ public class HabitDaoImpl implements HabitDao{
         return habits.get(0).getHabit_id();
 	}
 
+	public List<Habit> getAllTrackedHabits() {
+		String query = "select * from habit_types order by habit_id;";
+        List<Habit> habits = jdbcTemplate.query(query, new HabitRowMapperImpl());
+        return habits;
+	}
+
 }

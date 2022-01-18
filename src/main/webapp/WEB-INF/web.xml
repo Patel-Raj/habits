@@ -15,4 +15,37 @@
   	<url-pattern>/addHabit</url-pattern>
   </servlet-mapping>
   
+
+  
+  <servlet>
+  	<servlet-name>addRecord</servlet-name>
+  	<servlet-class>servlets.AddRecordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addRecord</servlet-name>
+  	<url-pattern>/addHabitRecord</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insertRecord</servlet-name>
+  	<servlet-class>servlets.InsertRecordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>insertRecord</servlet-name>
+  	<url-pattern>/insertRecord</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>viewProgress</servlet-name>
+  	<servlet-class>servlets.TrackProgressServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>viewProgress</servlet-name>
+  	<url-pattern>/viewProgress</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
